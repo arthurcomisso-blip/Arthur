@@ -750,6 +750,55 @@ address { font-style: normal; }
   color: var(--text-light);
 }
 
+/* Services block */
+.services-block {
+  margin-top: 48px;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 40px 48px;
+  border: 1px solid rgba(209,187,155,0.25);
+}
+
+.services-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 0.03em;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.service-item svg {
+  width: 40px;
+  height: 40px;
+  color: var(--gold);
+}
+
+.service-item span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+@media (max-width: 640px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-block { padding: 28px 24px; }
+}
+
 /* LeBonCoin redirect */
 .leboncoin-block {
   background: var(--navy);

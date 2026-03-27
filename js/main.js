@@ -134,7 +134,9 @@ if (backToTop) {
       const filter = btn.dataset.filter;
 
       cards.forEach(card => {
-        const show = filter === 'all' || card.dataset.type === filter;
+        const type = card.dataset.type;
+        const show = filter === 'all' || type === filter ||
+          (filter === 't1' && (type === 't1a' || type === 't1b'));
         card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
         if (show) {
           card.style.opacity   = '1';
