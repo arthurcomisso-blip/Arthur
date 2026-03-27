@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arthur et Max – Résidence Jeunes Actifs à Giraumont. Des logements meublés, confortables et abordables pour jeunes travailleurs et apprentis." />
+  <title>Arthur et Max – Résidence Jeunes Actifs | Giraumont</title>
+
+  <!-- Google Fonts – Outfit (très proche de Garet) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#accueil" class="nav-logo">
+        <!-- Logo SVG inline -->
+        <svg class="logo-svg" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" aria-label="Arthur et Max logo">
+          <!-- Soleil / cercle doré -->
+          <circle cx="38" cy="12" r="8" fill="#D1BB9B" opacity="0.9"/>
+          <!-- Arbres -->
+          <line x1="18" y1="40" x2="18" y2="28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <ellipse cx="18" cy="24" rx="5" ry="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="28" y1="40" x2="28" y2="30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <ellipse cx="28" cy="26" rx="4" ry="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <!-- Maison -->
+          <polyline points="36,40 36,22 54,22 54,40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          <polyline points="32,24 45,14 58,24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          <!-- Sol -->
+          <line x1="12" y1="40" x2="60" y2="40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- Porte -->
+          <rect x="43" y="30" width="7" height="10" fill="none" stroke="currentColor" stroke-width="1.2" rx="0.5"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">ARTHUR ET MAX</span>
+          <span class="logo-sub">RÉSIDENCE JEUNES ACTIFS</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#concept" class="nav-link">Le Concept</a></li>
+        <li><a href="#logements" class="nav-link">Logements</a></li>
+        <li><a href="#nous" class="nav-link">Arthur & Max</a></li>
+        <li><a href="#localisation" class="nav-link">Localisation</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Nous contacter</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="accueil">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Giraumont · Résidence Jeunes Actifs</p>
+      <h1 class="hero-title reveal">
+        Votre premier chez-vous,<br />
+        <span class="accent">sans les complications.</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Des logements meublés, chaleureux et abordables,<br class="break-md" />
+        pensés pour les jeunes qui se lancent dans la vie active.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#logements" class="btn btn-primary">Découvrir les logements</a>
+        <a href="#concept" class="btn btn-ghost">Notre concept →</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+    <!-- Formes décoratives -->
+    <div class="hero-deco deco-1"></div>
+    <div class="hero-deco deco-2"></div>
+  </section>
+
+  <!-- ===================== CHIFFRES CLÉS ===================== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Logements disponibles</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Meublés & équipés</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-label">Fondateurs passionnés</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-number" data-target="5">0</span><span class="stat-suffix">min</span>
+          <span class="stat-label">Du centre de Giraumont</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONCEPT ===================== -->
+  <section class="concept" id="concept">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">L'idée</span>
+        <h2 class="section-title">Une résidence<br /><em>pensée pour vous.</em></h2>
+        <p class="section-desc">
+          Parce que trouver un logement quand on démarre sa vie professionnelle,
+          c'est souvent un casse-tête. On a voulu changer ça.
+        </p>
+      </div>
+
+      <div class="concept-grid">
+        <div class="concept-card reveal">
+          <div class="concept-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6L6 20v22h12V30h12v12h12V20L24 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Logements clés en main</h3>
+          <p>Meubles, literie, électroménager, connexion internet. Vous arrivez avec votre valise, c'est tout.</p>
+        </div>
+
+        <div class="concept-card reveal">
+          <div class="concept-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 14v10l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Flexibilité maximale</h3>
+          <p>Contrats adaptés à votre rythme : apprentissage, CDD, mobilité professionnelle. Aucune mauvaise surprise.</p>
+        </div>
+
+        <div class="concept-card reveal">
+          <div class="concept-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 24c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 36c2-6 8-10 16-10s14 4 16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Une vraie communauté</h3>
+          <p>Des voisins dans la même situation que vous. Des échanges, de l'entraide, et une ambiance qui donne envie de rentrer chez soi.</p>
+        </div>
+
+        <div class="concept-card reveal">
+          <div class="concept-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 36V20M24 36V12M36 36V26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 40h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Prix juste & transparent</h3>
+          <p>Tout compris, sans frais cachés. Vous savez exactement combien vous payez, dès le premier jour.</p>
+        </div>
+      </div>
+
+      <!-- Image / ambiance -->
+      <div class="concept-visual reveal">
+        <div class="concept-img-placeholder">
+          <span>📸 Photo ambiance résidence</span>
+          <small>Remplacer par une vraie photo</small>
+        </div>
+        <div class="concept-quote">
+          <blockquote>
+            "On a voulu créer l'endroit qu'on aurait aimé trouver quand on a commencé."
+          </blockquote>
+          <cite>— Arthur &amp; Max</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOGEMENTS ===================== -->
+  <section class="logements" id="logements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Les logements</span>
+        <h2 class="section-title">Votre futur<br /><em>appartement.</em></h2>
+        <p class="section-desc">
+          Des espaces pensés pour le confort du quotidien, avec tout ce qu'il faut pour bien vivre.
+        </p>
+      </div>
+
+      <div class="logements-filters reveal">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="studio">Studios</button>
+        <button class="filter-btn" data-filter="t1">T1</button>
+        <button class="filter-btn" data-filter="t2">T2</button>
+      </div>
+
+      <div class="logements-grid">
+
+        <!-- Logement 1 -->
+        <article class="logement-card reveal" data-type="studio">
+          <div class="logement-img">
+            <div class="img-placeholder">
+              <span>📸</span>
+              <small>Photo du logement</small>
+            </div>
+            <span class="logement-badge">Studio</span>
+            <span class="logement-dispo dispo-libre">Disponible</span>
+          </div>
+          <div class="logement-body">
+            <h3>Studio cosy – 18 m²</h3>
+            <ul class="logement-features">
+              <li><svg viewBox="0 0 16 16"><path d="M8 1l1.5 3 3.5.5-2.5 2.5.6 3.5L8 9l-3.1 1.5.6-3.5L3 4.5l3.5-.5z" fill="currentColor"/></svg> Meublé & équipé</li>
+              <li><svg viewBox="0 0 16 16"><path d="M8 1l1.5 3 3.5.5-2.5 2.5.6 3.5L8 9l-3.1 1.5.6-3.5L3 4.5l3.5-.5z" fill="currentColor"/></svg> Charges comprises</li>
+              <li><svg viewBox="0 0 16 16"><path d="M8 1l1.5 3 3.5.5-2.5 2.5.6 3.5L8 9l-3.1 1.5.6-3.5L3 4.5l3.5-.5z" fill="currentColor"/></svg> Wi-Fi inclus</li>
+            </ul>
+            <div class="logement-footer">
+              <div class="logement-price">
+                <span class="price-amount">XXX€</span>
+                <span class="price-period">/mois CC</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Je suis intéressé(e)</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Logement 2 -->
+        <article class="logement-card reveal" data-type="t1">
+          <div class="logement-img">
+            <div class="img-placeholder">
+              <span>📸</span>
+              <small>Photo du logement</small>
+            </div>
+            <span class="logement-badge">T1</span>
+            <span class="logement-dispo dispo-libre">Disponible</span>
+          </div>
+          <div class="logement-body">
+            <h3>T1 lumineux – 28 m²</h3>
+            <ul class="logement-features">
+              <li><svg viewBox="0 0 16 16"><path d="M8 1l1.5 3 3.5.5-2.5 2.5.6 3.5L8 9l-3.1 1.5.6-3.5L3 4.5l3.5-.5z" fill="currentColor"/></svg> Cuisine séparée</li>
+              <li><svg viewBox="0 0 16 16"><path d="M8 1l1.5 3 3.5.5-2.5 2.5.6 3.5L8 9l-3.1 1.5.6-3.5L3 4.5l3.5-.5z" fill="currentColor"/></svg> Salle de bain privée</li>
+              <li><svg viewBox="0 0 16 16"><path d="M8 1l1.5 3 3.5.5-2.5 2.5.6 3.5L8 9l-3.1 1.5.6-3.5L3 4.5l3.5-.5z" fill="currentColor"/></svg> Vue dégagée</li>
+            </ul>
+            <div class="logement-footer">
+              <div class="logement-price">
+                <span class="price-amount">XXX€</span>
+                <span class="price-period">/mois CC</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Je suis intéressé(e)</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Logement 3 -->
+        <article class="logement-card reveal" data-type="t2">
+          <div class="logement-img">
+            <div class="img-placeholder">
+              <span>📸</span>
+              <small>Photo du logement</small>
+            </div>
+            <span class="logement-badge">T2</span>
+            <span class="logement-dispo dispo-bientot">Bientôt libre</span>
+          </div>
+          <div class="logement-body">
+            <h3>T2 confortable – 38 m²</h3>
+            <ul class="logement-features">
+              <li><svg viewBox="0 0 16 16"><path d="M8 1l1.5 3 3.5.5-2.5 2.5.6 3.5L8 9l-3.1 1.5.6-3.5L3 4.5l3.5-.5z" fill="currentColor"/></svg> Chambre séparée</li>
+              <li><svg viewBox="0 0 16 16"><path d="M8 1l1.5 3 3.5.5-2.5 2.5.6 3.5L8 9l-3.1 1.5.6-3.5L3 4.5l3.5-.5z" fill="currentColor"/></svg> Salon spacieux</li>
+              <li><svg viewBox="0 0 16 16"><path d="M8 1l1.5 3 3.5.5-2.5 2.5.6 3.5L8 9l-3.1 1.5.6-3.5L3 4.5l3.5-.5z" fill="currentColor"/></svg> Idéal en couple</li>
+            </ul>
+            <div class="logement-footer">
+              <div class="logement-price">
+                <span class="price-amount">XXX€</span>
+                <span class="price-period">/mois CC</span>
+              </div>
+              <a href="#contact" class="btn btn-sm">Je suis intéressé(e)</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- LeBonCoin redirect -->
+      <div class="leboncoin-block reveal">
+        <div class="leboncoin-inner">
+          <div class="leboncoin-text">
+            <h3>Retrouvez aussi nos annonces en ligne</h3>
+            <p>Toutes nos disponibilités sont publiées sur LeBonCoin. Passez directement par notre site pour bénéficier de la meilleure expérience.</p>
+          </div>
+          <a href="https://www.leboncoin.fr" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Voir sur LeBonCoin →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== ARTHUR & MAX ===================== -->
+  <section class="nous" id="nous">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Qui sommes-nous</span>
+        <h2 class="section-title">Arthur &amp; Max,<br /><em>deux amis, un projet.</em></h2>
+      </div>
+
+      <div class="nous-grid">
+        <div class="nous-card reveal">
+          <div class="nous-photo">
+            <div class="photo-placeholder">A</div>
+          </div>
+          <div class="nous-info">
+            <h3>Arthur</h3>
+            <p class="nous-role">Co-fondateur · [Votre métier / rôle]</p>
+            <p class="nous-bio">
+              [Quelques lignes sur vous : votre parcours, votre vision du logement jeune, ce qui vous a amené à créer la résidence. Quelque chose de personnel et authentique.]
+            </p>
+          </div>
+        </div>
+
+        <div class="nous-card reveal">
+          <div class="nous-photo">
+            <div class="photo-placeholder">M</div>
+          </div>
+          <div class="nous-info">
+            <h3>Max</h3>
+            <p class="nous-role">Co-fondateur · [Votre métier / rôle]</p>
+            <p class="nous-bio">
+              [Quelques lignes sur Max : son parcours, sa complémentarité avec Arthur, ce qui l'anime dans ce projet. Authentique et direct.]
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="nous-valeurs reveal">
+        <div class="valeur-item">
+          <div class="valeur-dot"></div>
+          <div>
+            <strong>Proximité</strong>
+            <p>On répond toujours présent. Un problème ? On est là.</p>
+          </div>
+        </div>
+        <div class="valeur-item">
+          <div class="valeur-dot"></div>
+          <div>
+            <strong>Honnêteté</strong>
+            <p>Pas de surprise. Ce qu'on promet, on le tient.</p>
+          </div>
+        </div>
+        <div class="valeur-item">
+          <div class="valeur-dot"></div>
+          <div>
+            <strong>Bienveillance</strong>
+            <p>On se souvient de ce que c'est que de débuter. On y met le cœur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEMOIGNAGES ===================== -->
+  <section class="temoignages" id="temoignages">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Ils vivent chez nous</span>
+        <h2 class="section-title">Ce qu'ils<br /><em>en pensent.</em></h2>
+      </div>
+
+      <div class="temoignages-slider">
+        <div class="temoignages-track" id="sliderTrack">
+
+          <div class="temoignage-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"J'ai emménagé en 48h sans stress. Tout était déjà prêt. Arthur et Max sont au top pour les moindres questions."</blockquote>
+            <cite>— [Prénom], apprenti en BTS</cite>
+          </div>
+
+          <div class="temoignage-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Le prix est vraiment juste pour ce qu'on a. Rien à acheter, rien à installer. J'ai adoré l'ambiance dans la résidence."</blockquote>
+            <cite>— [Prénom], jeune travailleur</cite>
+          </div>
+
+          <div class="temoignage-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Première location solo et franchement ça s'est super bien passé. Je recommande à tous mes collègues en mobilité."</blockquote>
+            <cite>— [Prénom], en mission temporaire</cite>
+          </div>
+
+          <div class="temoignage-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Réactifs, sympas, et le logement est nickel. On sent qu'ils tiennent vraiment à leurs locataires."</blockquote>
+            <cite>— [Prénom], contrat alternance</cite>
+          </div>
+
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="sliderPrev" aria-label="Précédent">←</button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="sliderNext" aria-label="Suivant">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOCALISATION ===================== -->
+  <section class="localisation" id="localisation">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Où nous trouver</span>
+        <h2 class="section-title">Au cœur de<br /><em>Giraumont.</em></h2>
+        <p class="section-desc">
+          Bien desservi, proche des commerces et des axes routiers.
+          Idéal pour travailler dans le bassin de [région].
+        </p>
+      </div>
+
+      <div class="localisation-grid">
+        <div class="localisation-infos reveal">
+          <div class="adresse-block">
+            <h3>Adresse</h3>
+            <address>
+              [Numéro et nom de rue]<br />
+              54150 Giraumont<br />
+              Meurthe-et-Moselle
+            </address>
+          </div>
+
+          <div class="proximite-list">
+            <h3>À proximité</h3>
+            <ul>
+              <li>
+                <span class="prox-dot"></span>
+                <span><strong>Commerces</strong> — supermarché, boulangerie, pharmacie</span>
+              </li>
+              <li>
+                <span class="prox-dot"></span>
+                <span><strong>Transports</strong> — arrêt de bus, accès A31 / N52</span>
+              </li>
+              <li>
+                <span class="prox-dot"></span>
+                <span><strong>Briey</strong> — 10 min · <strong>Metz</strong> — 35 min</span>
+              </li>
+              <li>
+                <span class="prox-dot"></span>
+                <span><strong>Zones industrielles</strong> — Michelin, ArcelorMittal, logistique</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="map-container reveal">
+          <!-- Remplacer [ADRESSE] par l'adresse réelle pour activer la carte -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.000000000001!2d5.9!3d49.18!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zR2lyYXVtb250!5e0!3m2!1sfr!2sfr!4v1234567890"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Carte de localisation – Résidence Arthur et Max, Giraumont"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">On vous répond<br /><em>rapidement.</em></h2>
+        <p class="section-desc">
+          Une question ? Une visite à organiser ? Remplissez le formulaire
+          ou contactez-nous directement.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Formulaire -->
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.fr" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="06 XX XX XX XX" />
+          </div>
+
+          <div class="form-group">
+            <label for="logement">Type de logement souhaité</label>
+            <select id="logement" name="logement">
+              <option value="">-- Sélectionner --</option>
+              <option value="studio">Studio</option>
+              <option value="t1">T1</option>
+              <option value="t2">T2</option>
+              <option value="any">Peu importe</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Dites-nous ce que vous recherchez, votre date d'emménagement souhaitée..." required></textarea>
+          </div>
+
+          <div class="form-group form-check">
+            <input type="checkbox" id="rgpd" name="rgpd" required />
+            <label for="rgpd">J'accepte que mes données soient utilisées pour me répondre.</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Envoyer ma demande</span>
+            <span class="btn-loading" hidden>Envoi en cours…</span>
+          </button>
+
+          <div class="form-success" id="formSuccess" hidden>
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#A7B9A8" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#A7B9A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Message envoyé ! On vous répond dans les plus brefs délais.
+          </div>
+        </form>
+
+        <!-- Infos contact directes -->
+        <div class="contact-infos reveal">
+          <div class="contact-info-block">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.73 9.5 19.79 19.79 0 01.67 4.04 2 2 0 012.68 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <strong>Téléphone</strong>
+              <a href="tel:+33XXXXXXXXX">[Votre numéro]</a>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:contact@chezarthuretmax.fr">contact@chezarthuretmax.fr</a>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <strong>Disponibilités</strong>
+              <span>Lun – Sam, 9h – 19h</span>
+            </div>
+          </div>
+
+          <div class="contact-response-time">
+            <div class="response-badge">⚡ Réponse sous 24h garantie</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#accueil" class="nav-logo footer-logo">
+            <svg class="logo-svg" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="38" cy="12" r="8" fill="#D1BB9B" opacity="0.9"/>
+              <line x1="18" y1="40" x2="18" y2="28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <ellipse cx="18" cy="24" rx="5" ry="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="28" y1="40" x2="28" y2="30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <ellipse cx="28" cy="26" rx="4" ry="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <polyline points="36,40 36,22 54,22 54,40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <polyline points="32,24 45,14 58,24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <line x1="12" y1="40" x2="60" y2="40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="43" y="30" width="7" height="10" fill="none" stroke="currentColor" stroke-width="1.2" rx="0.5"/>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-name">ARTHUR ET MAX</span>
+              <span class="logo-sub">RÉSIDENCE JEUNES ACTIFS</span>
+            </div>
+          </a>
+          <p class="footer-tagline">Des logements qui donnent envie de commencer.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#concept">Le Concept</a></li>
+            <li><a href="#logements">Logements</a></li>
+            <li><a href="#nous">Arthur &amp; Max</a></li>
+            <li><a href="#localisation">Localisation</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Logements</h4>
+          <ul>
+            <li><a href="#logements">Studios</a></li>
+            <li><a href="#logements">T1</a></li>
+            <li><a href="#logements">T2</a></li>
+            <li><a href="https://www.leboncoin.fr" target="_blank" rel="noopener">Nos annonces LeBonCoin</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><a href="tel:+33XXXXXXXXX">[Votre numéro]</a></p>
+          <p><a href="mailto:contact@chezarthuretmax.fr">contact@chezarthuretmax.fr</a></p>
+          <p>54150 Giraumont</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Arthur et Max – Résidence Jeunes Actifs. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
