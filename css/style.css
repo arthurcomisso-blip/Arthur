@@ -622,7 +622,23 @@ address { font-style: normal; }
 
 .logement-img {
   position: relative;
-  height: 220px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.logement-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: var(--radius) var(--radius) 0 0;
+  transition: transform 0.5s var(--ease);
+}
+
+.logement-card:hover .logement-photo {
+  transform: scale(1.04);
 }
 
 .img-placeholder {
