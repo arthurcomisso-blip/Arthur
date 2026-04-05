@@ -544,21 +544,16 @@ address { font-style: normal; }
 
 .concept-img-placeholder {
   background: var(--cream-dark);
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(209,187,155,0.08) 10px,
+    rgba(209,187,155,0.08) 20px
+  );
   border-radius: var(--radius);
   height: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border: 2px dashed var(--pearl);
-  color: var(--text-light);
-  font-size: 2rem;
-}
-
-.concept-img-placeholder small {
-  font-size: 0.8rem;
-  color: var(--text-light);
+  border: 1px solid rgba(209,187,155,0.3);
 }
 
 .concept-quote {
@@ -646,16 +641,15 @@ address { font-style: normal; }
   width: 100%;
   height: 100%;
   background: var(--cream-dark);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  color: var(--text-light);
-  font-size: 2rem;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(209,187,155,0.08) 10px,
+    rgba(209,187,155,0.08) 20px
+  );
+  border-radius: var(--radius) var(--radius) 0 0;
 }
-
-.img-placeholder small { font-size: 0.75rem; }
 
 .logement-badge {
   position: absolute;
@@ -872,16 +866,23 @@ address { font-style: normal; }
 }
 
 .photo-placeholder {
-  width: 80px;
-  height: 80px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
-  background: var(--navy);
-  color: var(--gold);
+  background: var(--cream-dark);
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 8px,
+    rgba(209,187,155,0.12) 8px,
+    rgba(209,187,155,0.12) 16px
+  );
+  border: 1px solid rgba(209,187,155,0.4);
+  color: transparent;
+  font-size: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
-  font-weight: 700;
 }
 
 .nous-info h3 {
